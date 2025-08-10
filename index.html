@@ -9,13 +9,12 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="青春交差点 - The School Days -">
   <meta property="og:description" content="学園もの舞台『青春交差点 - The School Days -』公式サイト">
-  <meta property="og:image" content="/public/images/og.jpg">
+  <meta property="og:image" content="images/og.jpg">
   <meta name="theme-color" content="#2E5339" />
 
   <!-- GLightbox (Lightbox) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"/>
-  <link rel="preload" href="./styles.css" as="style" />
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">本文へスキップ</a>
@@ -55,9 +54,7 @@
             <div class="school-badge" aria-hidden="true">学章</div>
           </div>
           <div class="id-body">
-            <div class="id-photo" aria-hidden="true">
-              <!-- ここは教室の淡いイラスト的な枠 -->
-            </div>
+            <div class="id-photo" aria-hidden="true"></div>
             <dl class="id-fields">
               <div>
                 <dt>上演期間</dt>
@@ -78,7 +75,7 @@
             </dl>
           </div>
           <div class="id-footer" id="ticket">
-            <a class="ticket-btn" href="https://ticket.example.com" target="_blank" rel="noopener noreferrer" aria-label="外部チケットサイトを新しいタブで開く">チケット</a>
+            <a class="ticket-btn" href="https://ticket.example.com" target="_blank" rel="noopener noreferrer">チケット</a>
             <div class="barcode" aria-hidden="true"></div>
           </div>
         </div>
@@ -86,7 +83,7 @@
       <div class="hero-bg" aria-hidden="true"></div>
     </section>
 
-    <!-- Details (for anchors) -->
+    <!-- Details -->
     <section id="details" class="details container">
       <h2>詳細</h2>
       <p>放課後の教室、置き去りの林檎。交差する“嘘”と“本音”が、最後のチャイムでひとつになる——。</p>
@@ -101,11 +98,11 @@
     <section id="flyer" class="flyers container" aria-label="公演ビラ">
       <h2>ビラ</h2>
       <div class="flyer-grid">
-        <a class="glightbox" href="/public/images/flyer_front.png" data-gallery="flyers" data-title="公演ビラ（表）">
-          <img src="/public/images/flyer_front.png" alt="公演ビラ（表）" loading="lazy" width="900" height="1350">
+        <a class="glightbox" href="images/flyer_front.png" data-gallery="flyers" data-title="公演ビラ（表）">
+          <img src="images/flyer_front.png" alt="公演ビラ（表）" loading="lazy" width="900" height="1350">
         </a>
-        <a class="glightbox" href="/public/images/flyer_back.png" data-gallery="flyers" data-title="公演ビラ（裏）">
-          <img src="/public/images/flyer_back.png" alt="公演ビラ（裏）" loading="lazy" width="900" height="1350">
+        <a class="glightbox" href="images/flyer_back.png" data-gallery="flyers" data-title="公演ビラ（裏）">
+          <img src="images/flyer_back.png" alt="公演ビラ（裏）" loading="lazy" width="900" height="1350">
         </a>
       </div>
     </section>
@@ -118,7 +115,7 @@
     </div>
   </footer>
 
-  <!-- JSON-LD (Event) -->
+  <!-- JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -133,7 +130,7 @@
       "address": "東京都〇〇区〇〇町1-2-3"
     },
     "organizer": {"@type": "Organization","name": "Tsukusho Theater"},
-    "image": ["/public/images/og.jpg"],
+    "image": ["images/og.jpg"],
     "offers": [{"@type": "Offer","url": "https://ticket.example.com","availability": "https://schema.org/InStock"}]
   }
   </script>
